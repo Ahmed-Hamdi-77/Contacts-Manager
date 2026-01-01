@@ -1,0 +1,44 @@
+﻿@model IEnumerable<PersonResponse>
+
+@{
+	Layout = null;
+	ViewBag.CurrentUrl = "~/Persons/PersonPdf";
+}
+@* Absolute URL for CSS to render in PDF *@
+<link href="@("http://" + Context.Request.Host.ToString() + "/14.29 Assignment-StyleSheet.css")" rel="stylesheet" />
+@*Equal to <link href="~/14.29 Assignment-StyleSheet.css" rel="stylesheet" />*@
+<h1>Persons</h1>
+
+	<table class="table w-100 mt">
+		<thead>
+			<tr>
+				<th>Person Name</th>
+			<th>Country Name</th>
+			<th>Email</th>
+			<th>Age</th>
+			<th>BirthDate</th>
+			<th>Gender</th>
+			<th>Address</th>
+			<th>RecieveNewsletter</th>
+				
+			</tr>
+		</thead>
+		<tbody>
+			@foreach (PersonResponse person in Model)
+			{
+				bool recieve = person.RecieveNewsletter == null ? false : true;
+
+				<tr>
+					<td>@person.PersonName</td>
+					<td>@person.CountryName</td>
+					<td>@person.Email</td>
+					<td>@person.Age</td>
+					<td>@person.BirthDate?.ToString("dd-MM-yyyy")</td>
+					<td>@person.Gender</td>
+					<td>@person.Address</td>
+					<td>@recieve</td>					
+				</tr>
+			}
+		</tbody>
+	</table>
+

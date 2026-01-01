@@ -1,0 +1,72 @@
+﻿[
+  {
+    "Id": "8BA16644-A00A-4722-8E76-336432127180",
+    "Name": "Ahmed",
+    "Address": "135 abied st",
+    "BirthDate": "2003-10-06T00:00:00",
+    "RecieveNewsletter": true,
+    "CountryId": "BC5C0290-49FB-423D-9440-007DB6AC1363",
+    "Email": "ah568505@gmail.com",
+    "Gender": "Male"
+  },
+  {
+    "Id": "E8BC8B10-CD84-4F5C-8630-50BFD91430B9",
+    "Name": "Sara",
+    "Address": "62 mores st",
+    "BirthDate": "2000-09-05T00:00:00",
+    "RecieveNewsletter": false,
+    "CountryId": "7A536480-94B8-40EA-991D-6CAC7AC32A86",
+    "Email": "sa568505@gmail.com",
+    "Gender": "Female"
+  },
+  {
+    "Id": "35ED84CE-7A22-4D4D-8764-069C021752B4",
+    "Name": "Ali",
+    "Address": "55 mhamiez st",
+    "BirthDate": "2001-01-06T00:00:00",
+    "RecieveNewsletter": true,
+    "CountryId": "AE6F4B3A-EC46-4E34-99E3-64A0F0D2174B",
+    "Email": "ali568505@gmail.com",
+    "Gender": "Male"
+  },
+  {
+    "Id": "BF5EEF4D-3422-47CD-90C9-6ED5AD996020",
+    "Name": "John",
+    "Address": "77 Porto st",
+    "BirthDate": "2002-11-03T00:00:00",
+    "RecieveNewsletter": true,
+    "CountryId": "BC5C0290-49FB-423D-9440-007DB6AC1363",
+    "Email": "jo568505@gmail.com",
+    "Gender": "Male"
+  },
+  {
+    "Id": "4EE181A7-2845-4AF6-A29A-4FB67A8F90D6",
+    "Name": "Marry",
+    "Address": "48 hendson st",
+    "BirthDate": "2005-07-10T00:00:00",
+    "RecieveNewsletter": false,
+    "CountryId": "8EFBA64C-38DA-4956-8733-DBEF6AC860B2",
+    "Email": "ma568505@gmail.com",
+    "Gender": "Female"
+  },
+  {
+    "Id": "64D3FEEB-4354-4F17-85D2-D6D96ACA05B7",
+    "Name": "Nada",
+    "Address": "155 sting st",
+    "BirthDate": "2011-01-12T00:00:00",
+    "RecieveNewsletter": true,
+    "CountryId": "E7D45E4A-BE35-4955-9E3A-53E3829DF119",
+    "Email": "na568505@gmail.com",
+    "Gender": "Female"
+  },
+  {
+    "Id": "75B85283-8384-4C78-9DB1-15DD27C9927F",
+    "Name": "Mohammed",
+    "Address": "120 zodiac st",
+    "BirthDate": "2010-02-10T00:00:00",
+    "RecieveNewsletter": false,
+    "CountryId": "7A536480-94B8-40EA-991D-6CAC7AC32A86",
+    "Email": "mo568505@gmail.com",
+    "Gender": "Male"
+  }
+]

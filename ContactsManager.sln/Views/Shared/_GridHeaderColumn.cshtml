@@ -1,0 +1,17 @@
+﻿
+	@if (ViewBag.CurrentSortOrder == SortOrderOptions.Asc.ToString())
+	{
+		<th>
+			<a href="~/persons/index?sortedBy=@ViewBag.ColumnName&
+			sortOrder=DESC&SearchBy=@ViewBag.CurrentSearchBy&
+			SearchString=@ViewBag.CurrentSearchString">@ViewBag.DisplayName</a>
+		</th>
+	}
+	else
+	{
+		<th>
+		<a href="~/persons/index?sortedBy=@ViewBag.ColumnName&
+						sortOrder=ASC&SearchBy=@ViewBag.CurrentSearchBy&
+							SearchString=@ViewBag.CurrentSearchString">@ViewBag.DisplayName</a>
+		</th>
+	}

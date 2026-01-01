@@ -1,0 +1,100 @@
+﻿@model RegisterDTO
+@{
+	ViewBag.Title = "Register";
+	ViewBag.CurrentUrl = "~/Account/Register"; 
+}
+
+<p>Already Registered? <a asp-action="Login" asp-controller="Account" class="link-hover">Login</a></p> <br/>
+<h2> Register</h2>
+<div class="center-box">
+	<form asp-action="Register" asp-controller="Account" method="post">
+		@* PersonName Field *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="PersonName" class="form-label pt">Name</label>
+			</div>
+			<div class="flex-1">
+				<input asp-for="PersonName" required class="form-input" />
+			</div>
+		</div>
+
+		@* Email Field *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="Email" class="form-label pt">Email</label>
+			</div>
+			<div class="flex-1">
+				<input type="email" asp-for="Email" class="form-input" />
+				
+			</div>
+		</div>
+
+		@* Password Field *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="Password" class="form-label pt">Password</label>
+			</div>
+			<div class="flex-1">
+				<input type="password" asp-for="Password" class="form-input" />
+			</div>
+		</div>
+
+		@* ConfirmPassword Field *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="ConfirmPassword" class="form-label pt">Confirm Password</label>
+			</div>
+			<div class="flex-1">
+				<input type="password" asp-for="ConfirmPassword" class="form-input" />
+			</div>
+		</div>
+
+		@* Phone Field *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="Phone" class="form-label pt">Phone</label>
+			</div>
+			<div class="flex-1">
+				<input type="tel" asp-for="Phone" class="form-input" />
+			</div>
+		</div>
+
+		@* User type *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="UserType" class="form-label pt">User Type</label>
+			</div>
+			<div class="flex-1">
+				<input type="radio" id="User" asp-for="UserType" value="User" />
+				<label for="User">User</label>
+				<input type="radio" id="Admin" asp-for="UserType" value="Admin" />
+				<label for="Admin">Admin</label>
+			</div>
+		</div>
+		
+		@* Register button *@
+		<div class="form-field flex">
+			<div class="w-25">
+			</div>
+			<div class="flex-1">
+				<button class="button button-green-back">Regiset</button>
+				@if (ViewBag.Errors is not null)
+				{
+					<div class=" text-red ml">
+						<ul>
+
+							@foreach (var error in ViewBag.Errors)
+							{
+								<li class="ml">@error</li>
+							}
+						</ul>
+					</div>
+				}
+			</div>
+		</div>
+
+	</form>
+	
+	}
+	
+</div>

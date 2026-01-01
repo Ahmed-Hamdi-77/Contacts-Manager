@@ -1,0 +1,43 @@
+﻿@model CountryAddRequest
+@{
+	ViewBag.Title = "Upload Country";
+	ViewBag.CurrentUrl = "~/Countries/UploadCountry";
+}
+<h2> Upload Country</h2>
+<div class="center-box">
+	<form asp-action="UploadCountry" asp-controller="Countries" method="post">
+		@* CountryName Field *@
+		<div class="form-field flex">
+			<div class="w-25">
+				<label for="CountryName" class="form-label pt">CountryName</label>
+			</div>
+			<div class="flex-1">
+				<input asp-for="CountryName" required class="form-input" />
+			</div>
+		</div>
+
+		
+
+		@* Upload button *@
+		<div class="form-field flex">
+			<div class="w-25">
+			</div>
+			<div class="flex-1">
+				<button class="button button-green-back">Upload</button>
+				@if (ViewBag.Errors is not null)
+				{
+					<div class=" text-red ml">
+						<ul>
+
+							@foreach (var error in ViewBag.Errors)
+							{
+								<li class="ml">@error</li>
+							}
+						</ul>
+					</div>
+				}
+			</div>
+		</div>
+
+	</form>
+</div>
