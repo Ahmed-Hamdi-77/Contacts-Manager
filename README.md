@@ -353,21 +353,6 @@ Initial data is loaded from:
 | POST | `/Account/Login` | Authenticate user |
 | POST | `/Account/Logout` | Logout user |
 
----
-
-## 📸 Screenshots
-
-### Home Page
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page+Screenshot)
-
-### Person List
-![Person List](https://via.placeholder.com/800x400?text=Person+List+Screenshot)
-
-### Create Person
-![Create Person](https://via.placeholder.com/800x400?text=Create+Person+Screenshot)
-
-### Upload Countries
-![Upload Countries](https://via.placeholder.com/800x400?text=Upload+Countries+Screenshot)
 
 ---
 
