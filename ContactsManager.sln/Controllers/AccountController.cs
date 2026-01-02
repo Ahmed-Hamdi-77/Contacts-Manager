@@ -115,8 +115,15 @@ namespace ContactsManager.Controllers
         {
             if (!ModelState.IsValid)
             {
-                ViewBag.Errors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage).ToList();
-                return View(loginDTO);
+                if (string.IsNullOrEmpty(ReturnUrl))
+                {
+                    ReturnUrl = "/";
+                }
+                else
+                {
+                    ViewBag.Errors = ModelState.Values.SelectMany(temp => temp.Errors).Select(temp => temp.ErrorMessage).ToList();
+                    return View(loginDTO);                    
+                }
             }
 
 
